@@ -1,0 +1,2663 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+    
+
+
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="超酷的100款网络黑客工具集合, Penetration-test  Spade-Z 渗透测试 安全 web漏洞">
+    <meta name="baidu-site-verification" content="fmlEuI34ir">
+    <meta name="google-site-verification" content="KeoTn_OFy4ndJwXNmm2gMeQfPhd7alqE9vQDwI32KCY">
+    <meta name="description" content="
+
+
+Type
+Name
+Description
+
+
+
+
+Army-Knife/SCAN
+jaeles
+The Swiss Army knife for automated Web Application Testing
+
+
+Army-Kn">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>超酷的100款网络黑客工具集合 | Spade-Zの博客</title>
+    <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh//SpadeZ-A/cdn/img/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+    
+    <style type="text/css">
+        
+            
+            code[class*="language-"],
+            pre[class*="language-"] {
+                white-space: pre !important;
+            }
+
+        
+    </style>
+
+    <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
+    <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?46e79e71af0709a5b9106bf20cecc493";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+    
+    
+        <script>
+            (function(){
+                var bp = document.createElement('script');
+                var curProtocol = window.location.protocol.split(':')[0];
+                if (curProtocol === 'https') {
+                    bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+                }
+                else {
+                    bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                }
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(bp, s);
+            })();
+        </script>
+    
+
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+
+    <body>
+
+        <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="https://cdn.jsdelivr.net/gh//SpadeZ-A/cdn/img/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Spade-Zの博客</span>
+                </a>
+            </div>
+            
+
+
+<!-- <a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fa fa-navicon"></i></a>
+<ul class="right">
+    
+    <li class="hide-on-med-and-down">
+        <a href="/" class="waves-effect waves-light">
+            
+            <i class="fa fa-home"></i>
+            
+            <span>首页</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/tags" class="waves-effect waves-light">
+            
+            <i class="fa fa-tags"></i>
+            
+            <span>标签</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/categories" class="waves-effect waves-light">
+            
+            <i class="fa fa-bookmark"></i>
+            
+            <span>分类</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/archives" class="waves-effect waves-light">
+            
+            <i class="fa fa-archive"></i>
+            
+            <span>归档</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/Audio-visual" class="waves-effect waves-light">
+            
+            <i class="fa fa-music"></i>
+            
+            <span>视听</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/about" class="waves-effect waves-light">
+            
+            <i class="fa fa-user-circle-o"></i>
+            
+            <span>关于我</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/contact" class="waves-effect waves-light">
+            
+            <i class="fa fa-envelope"></i>
+            
+            <span>留言板</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/friends" class="waves-effect waves-light">
+            
+            <i class="fa fa-address-book"></i>
+            
+            <span>友情链接</span>
+        </a>
+    </li>
+    
+    <li>
+        <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+            <i id="searchIcon" class="fa fa-search" title="搜索"></i>
+        </a>
+    </li>
+</ul> -->
+
+<!-- 支持二级菜单特性 洪卫 shw2018 modify 2019.09.17  -->
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fa fa-navicon"></i></a>
+<ul class="right nav-menu">
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/" class="waves-effect waves-light">
+              
+                <i class="fa fa-home"></i>
+              
+              <span>首页</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/tags" class="waves-effect waves-light">
+              
+                <i class="fa fa-tags"></i>
+              
+              <span>标签</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/categories" class="waves-effect waves-light">
+              
+                <i class="fa fa-bookmark"></i>
+              
+              <span>分类</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/archives" class="waves-effect waves-light">
+              
+                <i class="fa fa-archive"></i>
+              
+              <span>归档</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/Audio-visual" class="waves-effect waves-light">
+              
+                <i class="fa fa-music"></i>
+              
+              <span>视听</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/about" class="waves-effect waves-light">
+              
+                <i class="fa fa-user-circle-o"></i>
+              
+              <span>关于我</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/contact" class="waves-effect waves-light">
+              
+                <i class="fa fa-envelope"></i>
+              
+              <span>留言板</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/friends" class="waves-effect waves-light">
+              
+                <i class="fa fa-address-book"></i>
+              
+              <span>友情链接</span>
+            </a>
+
+            
+      </li>
+    
+
+    <li>
+        <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+            <i id="searchIcon" class="fa fa-search" title="搜索"></i>
+        </a>
+    </li>
+
+</ul>
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="https://cdn.jsdelivr.net/gh//SpadeZ-A/cdn/img/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Spade-Zの博客</div>
+        <div class="logo-desc">
+            
+            辽宁科技大学 | 计算机与软件工程学院 | 计算机科学与技术
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li>
+            <a href="/" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-home"></i>
+                
+                首页
+            </a>
+        </li>
+        
+        <li>
+            <a href="/tags" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-tags"></i>
+                
+                标签
+            </a>
+        </li>
+        
+        <li>
+            <a href="/categories" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-bookmark"></i>
+                
+                分类
+            </a>
+        </li>
+        
+        <li>
+            <a href="/archives" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-archive"></i>
+                
+                归档
+            </a>
+        </li>
+        
+        <li>
+            <a href="/Audio-visual" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-music"></i>
+                
+                视听
+            </a>
+        </li>
+        
+        <li>
+            <a href="/about" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-user-circle-o"></i>
+                
+                关于我
+            </a>
+        </li>
+        
+        <li>
+            <a href="/contact" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-envelope"></i>
+                
+                留言板
+            </a>
+        </li>
+        
+        <li>
+            <a href="/friends" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-address-book"></i>
+                
+                友情链接
+            </a>
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/SpadeZ-A/SpadeZ-A.github.io" class="waves-effect waves-light" target="_blank">
+                <i class="fa fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+
+   
+   
+<!-- 支持二级菜单特性 洪卫 shw2018 modify 2019.09.17  -->
+<!-- <ul class="menu-list mobile-menu-list">
+    
+        <li class="m-nav-item">
+                
+                    <a href="/" class="waves-effect waves-light">
+                        
+                        <i class="fa fa-fw fa-home"></i>
+                        
+                        首页
+                    </a>
+              
+            </li>
+        
+        <li class="m-nav-item">
+                
+                    <a href="/tags" class="waves-effect waves-light">
+                        
+                        <i class="fa fa-fw fa-tags"></i>
+                        
+                        标签
+                    </a>
+              
+            </li>
+        
+        <li class="m-nav-item">
+                
+                    <a href="/categories" class="waves-effect waves-light">
+                        
+                        <i class="fa fa-fw fa-bookmark"></i>
+                        
+                        分类
+                    </a>
+              
+            </li>
+        
+        <li class="m-nav-item">
+                
+                    <a href="/archives" class="waves-effect waves-light">
+                        
+                        <i class="fa fa-fw fa-archive"></i>
+                        
+                        归档
+                    </a>
+              
+            </li>
+        
+        <li class="m-nav-item">
+                
+                    <a href="/Audio-visual" class="waves-effect waves-light">
+                        
+                        <i class="fa fa-fw fa-music"></i>
+                        
+                        视听
+                    </a>
+              
+            </li>
+        
+        <li class="m-nav-item">
+                
+                    <a href="/about" class="waves-effect waves-light">
+                        
+                        <i class="fa fa-fw fa-user-circle-o"></i>
+                        
+                        关于我
+                    </a>
+              
+            </li>
+        
+        <li class="m-nav-item">
+                
+                    <a href="/contact" class="waves-effect waves-light">
+                        
+                        <i class="fa fa-fw fa-envelope"></i>
+                        
+                        留言板
+                    </a>
+              
+            </li>
+        
+        <li class="m-nav-item">
+                
+                    <a href="/friends" class="waves-effect waves-light">
+                        
+                        <i class="fa fa-fw fa-address-book"></i>
+                        
+                        友情链接
+                    </a>
+              
+            </li>
+        
+
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/SpadeZ-A/SpadeZ-A.github.io" class="waves-effect waves-light" target="_blank">
+                <i class="fa fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul> -->
+
+</div>
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/SpadeZ-A/SpadeZ-A.github.io" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+        
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh//SpadeZ-A/cdn/img/featureimages16.png')">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <div class="description center-align post-title">
+                        超酷的100款网络黑客工具集合
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #toc-content .is-active-link::before {
+        background-color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 20px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/网络安全/" target="_blank">
+                                <span class="chip bg-color">网络安全</span>
+                            </a>
+                        
+                            <a href="/tags/黑客-Hacker/" target="_blank">
+                                <span class="chip bg-color">黑客 (Hacker)</span>
+                            </a>
+                        
+                            <a href="/tags/黑客工具/" target="_blank">
+                                <span class="chip bg-color">黑客工具</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fa fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/黑客工具/" class="post-category" target="_blank">
+                                黑客工具
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="post-info">
+                <div class="post-date info-break-policy">
+                    <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2020-11-27
+                </div>
+
+                <div class="post-author info-break-policy">
+                    <i class="fa fa-user-o fa-fw"></i>作者:&nbsp;&nbsp;
+                    
+                        Spade-Z
+                    
+                </div>
+
+                
+                    
+                    <div class="info-break-policy">
+                        <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
+                        2.3k
+                    </div>
+                    
+
+                    
+                    <div class="info-break-policy">
+                        <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                        14 分
+                    </div>
+                    
+                
+                
+                
+                        <span id="busuanzi_container_site_pv" style='display:none'></span>
+                        <i class="fa fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv" ></span>
+    
+                
+
+            </div>
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <table>
+<thead>
+<tr>
+<th>Type</th>
+<th align="left">Name</th>
+<th align="center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Army-Knife/SCAN</td>
+<td align="left"><a href="https://github.com/jaeles-project/jaeles" target="_blank" rel="noopener">jaeles</a></td>
+<td align="center">The Swiss Army knife for automated Web Application Testing</td>
+</tr>
+<tr>
+<td>Army-Knife/PROXY</td>
+<td align="left"><a href="https://portswigger.net/burp" rel="noopener" target="_blank">BurpSuite</a></td>
+<td align="center">the BurpSuite Project</td>
+</tr>
+<tr>
+<td>Army-Knife/PROXY</td>
+<td align="left"><a href="https://github.com/dstotijn/hetty" target="_blank" rel="noopener">hetty</a></td>
+<td align="center">Hetty is an HTTP toolkit for security research. It aims to become an open source alternative to commercial software like Burp Suite Pro, with powerful features tailored to the needs of the infosec and bug bounty community.</td>
+</tr>
+<tr>
+<td>Army-Knife/PROXY</td>
+<td align="left"><a href="https://github.com/zaproxy/zaproxy" target="_blank" rel="noopener">zaproxy</a></td>
+<td align="center">The OWASP ZAP core project</td>
+</tr>
+<tr>
+<td>Army-Knife/SCAN</td>
+<td align="left"><a href="https://github.com/projectdiscovery/nuclei" target="_blank" rel="noopener">nuclei</a></td>
+<td align="center">Nuclei is a fast tool for configurable targeted scanning based on templates offering massive extensibility and ease of use.</td>
+</tr><tr>
+<td>Discovery/ALL</td>
+<td align="left"><a href="https://github.com/shmilylty/OneForAll" target="_blank" rel="noopener">OneForAll</a></td>
+<td align="center">OneForAll是一款功能强大的子域收集工具</td>
+
+</tr>
+<tr>
+<td>Discovery/ALL</td>
+<td align="left"><a href="https://github.com/michenriksen/aquatone" target="_blank" rel="noopener">aquatone</a></td>
+<td align="center">A Tool for Domain Flyovers</td>
+</tr>
+<tr>
+<td>Discovery/ALL</td>
+<td align="left"><a href="https://github.com/intrigueio/intrigue-core" target="_blank" rel="noopener">intrigue-core</a></td>
+<td align="center">Discover Your Attack Surface</td>
+</tr>
+<tr>
+<td>Discovery/ALL</td>
+<td align="left"><a href="https://github.com/nahamsec/lazyrecon" target="_blank" rel="noopener">lazyrecon</a></td>
+<td align="center">This script is intended to automate your reconnaissance process in an organized fashion</td>
+</tr>
+<tr>
+<td>Discovery/ALL</td>
+<td align="left"><a href="https://github.com/yogeshojha/rengine" target="_blank" rel="noopener">rengine</a></td>
+<td align="center">reNgine is an automated reconnaissance framework meant for gathering information during penetration testing of web applications. reNgine has customizable scan engines, which can be used to scan the websites, endpoints, and gather information.</td>
+</tr>
+<tr>
+<td>Discovery/ALL</td>
+<td align="left"><a href="https://github.com/edoardottt/scilla" target="_blank" rel="noopener">scilla</a></td>
+<td align="center"><g-emoji class="g-emoji" alias="pirate_flag" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f3f4-2620.png">🏴‍☠️</g-emoji> Information Gathering tool <g-emoji class="g-emoji" alias="pirate_flag" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f3f4-2620.png">🏴‍☠️</g-emoji> dns/subdomain/port enumeration</td>
+</tr>
+<tr>
+<td>Discovery/ALL</td>
+<td align="left"><a href="https://github.com/kpcyrd/sn0int" target="_blank" rel="noopener">sn0int</a></td>
+<td align="center">Semi-automatic OSINT framework and package manager</td>
+</tr>
+<tr>
+<td>Discovery/APK</td>
+<td align="left"><a href="https://github.com/dwisiswant0/apkleaks" target="_blank" rel="noopener">apkleaks</a></td>
+<td align="center">Scanning APK file for URIs, endpoints &amp; secrets.</td>
+</tr>
+<tr>
+<td>Discovery/CRAWL</td>
+<td align="left"><a href="https://github.com/s0md3v/Photon" target="_blank" rel="noopener">Photon</a></td>
+<td align="center">Incredibly fast crawler designed for OSINT.</td>
+</tr>
+<tr>
+<td>Discovery/CRAWL</td>
+<td align="left"><a href="https://github.com/si9int/cc.py" target="_blank" rel="noopener">cc.py</a></td>
+<td align="center">Extracting URLs of a specific target based on the results of "commoncrawl.org"</td>
+</tr>
+<tr>
+<td>Discovery/CRAWL</td>
+<td align="left"><a href="https://github.com/dwisiswant0/go-dork" target="_blank" rel="noopener">go-dork</a></td>
+<td align="center">The fastest dork scanner written in Go.</td>
+</tr>
+<tr>
+<td>Discovery/CRAWL</td>
+<td align="left"><a href="https://github.com/jaeles-project/gospider" target="_blank" rel="noopener">gospider</a></td>
+<td align="center">Gospider - Fast web spider written in Go</td>
+</tr>
+<tr>
+<td>Discovery/CRAWL</td>
+<td align="left"><a href="https://github.com/hakluke/hakrawler" target="_blank" rel="noopener">hakrawler</a></td>
+<td align="center">Simple, fast web crawler designed for easy, quick discovery of endpoints and assets within a web application</td>
+</tr>
+<tr>
+<td>Discovery/CRAWL</td>
+<td align="left"><a href="https://github.com/IAmStoxe/urlgrab" target="_blank" rel="noopener">urlgrab</a></td>
+<td align="center">A golang utility to spider through a website searching for additional links.</td>
+</tr>
+<tr>
+<td>Discovery/DNS</td>
+<td align="left"><a href="https://dnsdumpster.com" rel="noopener" target="_blank">DNSDumpster</a></td>
+<td align="center">Online dns recon &amp; research, find &amp; lookup dns records</td>
+</tr>
+<tr>
+<td>Discovery/DNS</td>
+<td align="left"><a href="https://securitytrails.com" rel="noopener" target="_blank">SecurityTrails</a></td>
+<td align="center">Online dns / subdomain / recon tool</td>
+</tr>
+<tr>
+<td>Discovery/DNS</td>
+<td align="left"><a href="https://github.com/projectdiscovery/dnsprobe" target="_blank" rel="noopener">dnsprobe</a></td>
+<td align="center">DNSProb (beta) is a tool built on top of retryabledns that allows you to perform multiple dns queries of your choice with a list of user supplied resolvers.</td>
+</tr>
+<tr>
+<td>Discovery/DNS</td>
+<td align="left"><a href="https://github.com/vortexau/dnsvalidator" target="_blank" rel="noopener">dnsvalidator</a></td>
+<td align="center">Maintains a list of IPv4 DNS servers by verifying them against baseline servers, and ensuring accurate responses.</td>
+</tr>
+<tr>
+<td>Discovery/DNS</td>
+<td align="left"><a href="https://github.com/hakluke/hakrevdns" target="_blank" rel="noopener">hakrevdns</a></td>
+<td align="center">Small, fast tool for performing reverse DNS lookups en masse.</td>
+</tr>
+<tr>
+<td>Discovery/DNS</td>
+<td align="left"><a href="https://github.com/projectdiscovery/shuffledns" target="_blank" rel="noopener">shuffledns</a></td>
+<td align="center">shuffleDNS is a wrapper around massdns written in go that allows you to enumerate valid subdomains using active bruteforce as well as resolve subdomains with wildcard handling and easy input-output support.</td>
+</tr>
+<tr>
+<td>Discovery/DNS</td>
+<td align="left"><a href="https://github.com/pry0cc/subgen" target="_blank" rel="noopener">subgen</a></td>
+<td align="center">A really simple utility to concate wordlists to a domain name - to pipe into your favourite resolver!</td>
+</tr>
+<tr>
+<td>Discovery/DNS</td>
+<td align="left"><a href="https://github.com/zmap/zdns" target="_blank" rel="noopener">zdns</a></td>
+<td align="center">Fast CLI DNS Lookup Tool</td>
+</tr>
+<tr>
+<td>Discovery/DOMAIN</td>
+<td align="left"><a href="https://github.com/OWASP/Amass" target="_blank" rel="noopener">Amass</a></td>
+<td align="center">In-depth Attack Surface Mapping and Asset Discovery</td>
+</tr>
+<tr>
+<td>Discovery/DOMAIN</td>
+<td align="left"><a href="https://chaos.projectdiscovery.io" rel="noopener" target="_blank">Chaos Web</a></td>
+<td align="center">actively scan and maintain internet-wide assets' data. enhance research and analyse changes around DNS for better insights.</td>
+</tr>
+<tr>
+<td>Discovery/DOMAIN</td>
+<td align="left"><a href="https://github.com/aboul3la/Sublist3r" target="_blank" rel="noopener">Sublist3r</a></td>
+<td align="center">Fast subdomains enumeration tool for penetration testers</td>
+</tr>
+<tr>
+<td>Discovery/DOMAIN</td>
+<td align="left"><a href="https://github.com/infosec-au/altdns" target="_blank" rel="noopener">altdns</a></td>
+<td align="center">Generates permutations, alterations and mutations of subdomains and then resolves them</td>
+</tr>
+<tr>
+<td>Discovery/DOMAIN</td>
+<td align="left"><a href="https://github.com/tomnomnom/assetfinder" target="_blank" rel="noopener">assetfinder</a></td>
+<td align="center">Find domains and subdomains related to a given domain</td>
+</tr>
+<tr>
+<td>Discovery/DOMAIN</td>
+<td align="left"><a href="https://github.com/projectdiscovery/chaos-client" target="_blank" rel="noopener">chaos-client</a></td>
+<td align="center">Go client to communicate with Chaos DNS API.</td>
+</tr>
+<tr>
+<td>Discovery/DOMAIN</td>
+<td align="left"><a href="https://github.com/Edu4rdSHL/findomain" target="_blank" rel="noopener">findomain</a></td>
+<td align="center">The fastest and cross-platform subdomain enumerator, do not waste your time.</td>
+</tr>
+<tr>
+<td>Discovery/DOMAIN</td>
+<td align="left"><a href="https://github.com/guelfoweb/knock" target="_blank" rel="noopener">knock</a></td>
+<td align="center">Knock Subdomain Scan</td>
+</tr>
+<tr>
+<td>Discovery/DOMAIN</td>
+<td align="left"><a href="https://github.com/projectdiscovery/subfinder" target="_blank" rel="noopener">subfinder</a></td>
+<td align="center">Subfinder is a subdomain discovery tool that discovers valid subdomains for websites. Designed as a passive framework to be useful for bug bounties and safe for penetration testing.</td>
+</tr>
+<tr>
+<td>Discovery/FAVICON</td>
+<td align="left"><a href="https://github.com/devanshbatham/FavFreak" target="_blank" rel="noopener">FavFreak</a></td>
+<td align="center">Making Favicon.ico based Recon Great again !</td>
+</tr>
+<tr>
+<td>Discovery/FUZZ</td>
+<td align="left"><a href="https://github.com/maurosoria/dirsearch" target="_blank" rel="noopener">dirsearch</a></td>
+<td align="center">Web path scanner</td>
+</tr>
+<tr>
+<td>Discovery/FUZZ</td>
+<td align="left"><a href="https://github.com/epi052/feroxbuster" target="_blank" rel="noopener">feroxbuster</a></td>
+<td align="center">A fast, simple, recursive content discovery tool written in Rust.</td>
+</tr>
+<tr>
+<td>Discovery/FUZZ</td>
+<td align="left"><a href="https://github.com/OJ/gobuster" target="_blank" rel="noopener">gobuster</a></td>
+<td align="center">Directory/File, DNS and VHost busting tool written in Go</td>
+</tr>
+<tr>
+<td>Discovery/FUZZ</td>
+<td align="left"><a href="https://github.com/riza/medusa" target="_blank" rel="noopener">medusa</a></td>
+<td align="center">Fastest recursive HTTP fuzzer, like a Ferrari.</td>
+</tr>
+<tr>
+<td>Discovery/GIT</td>
+<td align="left"><a href="https://github.com/UnkL4b/GitMiner" target="_blank" rel="noopener">GitMiner</a></td>
+<td align="center">Tool for advanced mining for content on Github</td>
+</tr>
+<tr>
+<td>Discovery/GIT</td>
+<td align="left"><a href="https://github.com/hisxo/gitGraber" target="_blank" rel="noopener">gitGraber</a></td>
+<td align="center">gitGraber</td>
+</tr>
+<tr>
+<td>Discovery/GIT</td>
+<td align="left"><a href="https://github.com/gwen001/github-search" target="_blank" rel="noopener">github-search</a></td>
+<td align="center">Tools to perform basic search on GitHub.</td>
+</tr>
+<tr>
+<td>Discovery/GIT</td>
+<td align="left"><a href="https://github.com/zricethezav/gitleaks" target="_blank" rel="noopener">gitleaks</a></td>
+<td align="center">Scan git repos for secrets using regex and entropy <g-emoji class="g-emoji" alias="key" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f511.png">🔑</g-emoji></td>
+</tr>
+<tr>
+<td>Discovery/GIT</td>
+<td align="left"><a href="https://github.com/michenriksen/gitrob" target="_blank" rel="noopener">gitrob</a></td>
+<td align="center">Reconnaissance tool for GitHub organizations</td>
+</tr>
+<tr>
+<td>Discovery/GQL</td>
+<td align="left"><a href="https://github.com/APIs-guru/graphql-voyager" target="_blank" rel="noopener">graphql-voyager</a></td>
+<td align="center"><g-emoji class="g-emoji" alias="artificial_satellite" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6f0.png">🛰️</g-emoji> Represent any GraphQL API as an interactive graph</td>
+</tr>
+<tr>
+<td>Discovery/GQL</td>
+<td align="left"><a href="https://github.com/doyensec/inql" target="_blank" rel="noopener">inql</a></td>
+<td align="center">InQL - A Burp Extension for GraphQL Security Testing</td>
+</tr>
+<tr>
+<td>Discovery/HTTP</td>
+<td align="left"><a href="https://github.com/s0md3v/Arjun" target="_blank" rel="noopener">Arjun</a></td>
+<td align="center">HTTP parameter discovery suite.</td>
+</tr>
+<tr>
+<td>Discovery/HTTP</td>
+<td align="left"><a href="https://github.com/m4ll0k/Aron" target="_blank" rel="noopener">Aron</a></td>
+<td align="center">Aron is a GO script for finding hidden GET &amp; POST parameters</td>
+</tr>
+<tr>
+<td>Discovery/JS</td>
+<td align="left"><a href="https://github.com/KathanP19/JSFScan.sh" target="_blank" rel="noopener">JSFScan.sh</a></td>
+<td align="center">Automation for javascript recon in bug bounty.</td>
+</tr>
+<tr>
+<td>Discovery/JS</td>
+<td align="left"><a href="https://github.com/GerbenJavado/LinkFinder" target="_blank" rel="noopener">LinkFinder</a></td>
+<td align="center">A python script that finds endpoints in JavaScript files</td>
+</tr>
+<tr>
+<td>Discovery/JS</td>
+<td align="left"><a href="https://github.com/m4ll0k/SecretFinder" target="_blank" rel="noopener">SecretFinder</a></td>
+<td align="center">SecretFinder - A python script for find sensitive data (apikeys, accesstoken,jwt,..) and search anything on javascript files</td>
+</tr>
+<tr>
+<td>Discovery/PARAM</td>
+<td align="left"><a href="https://github.com/devanshbatham/ParamSpider" target="_blank" rel="noopener">ParamSpider</a></td>
+<td align="center">Mining parameters from dark corners of Web Archives</td>
+</tr>
+<tr>
+<td>Discovery/PARAM</td>
+<td align="left"><a href="https://github.com/s0md3v/Parth" target="_blank" rel="noopener">Parth</a></td>
+<td align="center">Heuristic Vulnerable Parameter Scanner</td>
+</tr>
+<tr>
+<td>Discovery/PORT</td>
+<td align="left"><a href="https://github.com/brandonskerritt/RustScan" target="_blank" rel="noopener">RustScan</a></td>
+<td align="center">Faster Nmap Scanning with Rust</td>
+</tr>
+<tr>
+<td>Discovery/PORT</td>
+<td align="left"><a href="https://www.shodan.io/" rel="noopener" target="_blank">Shodan</a></td>
+<td align="center">World's first search engine for Internet-connected devices</td>
+</tr>
+<tr>
+<td>Discovery/PORT</td>
+<td align="left"><a href="https://github.com/robertdavidgraham/masscan" target="_blank" rel="noopener">masscan</a></td>
+<td align="center">TCP port scanner, spews SYN packets asynchronously, scanning entire Internet in under 5 minutes.</td>
+</tr>
+<tr>
+<td>Discovery/PORT</td>
+<td align="left"><a href="https://github.com/projectdiscovery/naabu" target="_blank" rel="noopener">naabu</a></td>
+<td align="center">A fast port scanner written in go with focus on reliability and simplicity. Designed to be used in combination with other tools for attack surface discovery in bug bounties and pentests</td>
+</tr>
+<tr>
+<td>Discovery/PORT</td>
+<td align="left"><a href="https://github.com/nmap/nmap" target="_blank" rel="noopener">nmap</a></td>
+<td align="center">Nmap - the Network Mapper. Github mirror of official SVN repository.</td>
+</tr>
+<tr>
+<td>Discovery/TKOV</td>
+<td align="left"><a href="https://github.com/Ice3man543/SubOver" target="_blank" rel="noopener">SubOver</a></td>
+<td align="center">A Powerful Subdomain Takeover Tool</td>
+</tr>
+<tr>
+<td>Discovery/TKOV</td>
+<td align="left"><a href="https://github.com/EdOverflow/can-i-take-over-xyz" target="_blank" rel="noopener">can-i-take-over-xyz</a></td>
+<td align="center">"Can I take over XYZ?" — a list of services and how to claim (sub)domains with dangling DNS records.</td>
+</tr>
+<tr>
+<td>Discovery/TKOV</td>
+<td align="left"><a href="https://github.com/haccer/subjack" target="_blank" rel="noopener">subjack</a></td>
+<td align="center">Subdomain Takeover tool written in Go</td>
+</tr>
+<tr>
+<td>Discovery/URL</td>
+<td align="left"><a href="https://github.com/tomnomnom/waybackurls" target="_blank" rel="noopener">waybackurls</a></td>
+<td align="center">Fetch all the URLs that the Wayback Machine knows about for a domain</td>
+</tr>
+<tr>
+<td>Discovery/VULN</td>
+<td align="left"><a href="https://github.com/s0md3v/Silver" target="_blank" rel="noopener">Silver</a></td>
+<td align="center">Mass scan IPs for vulnerable services</td>
+</tr>
+<tr>
+<td>Fetch/HTTP</td>
+<td align="left"><a href="https://github.com/htcat/htcat" target="_blank" rel="noopener">htcat</a></td>
+<td align="center">Parallel and Pipelined HTTP GET Utility</td>
+</tr>
+<tr>
+<td>Fetch/HTTP</td>
+<td align="left"><a href="https://github.com/tomnomnom/httprobe" target="_blank" rel="noopener">httprobe</a></td>
+<td align="center">Take a list of domains and probe for working HTTP and HTTPS servers</td>
+</tr>
+<tr>
+<td>Fetch/HTTP</td>
+<td align="left"><a href="https://github.com/projectdiscovery/httpx" target="_blank" rel="noopener">httpx</a></td>
+<td align="center">httpx is a fast and multi-purpose HTTP toolkit allow to run multiple probers using retryablehttp library, it is designed to maintain the result reliability with increased threads.</td>
+</tr>
+<tr>
+<td>Fetch/HTTP</td>
+<td align="left"><a href="https://github.com/tomnomnom/meg" target="_blank" rel="noopener">meg</a></td>
+<td align="center">Fetch many paths for many hosts - without killing the hosts</td>
+</tr>
+<tr>
+<td>Fetch/HTTP</td>
+<td align="left"><a href="https://github.com/asciimoo/wuzz" target="_blank" rel="noopener">wuzz</a></td>
+<td align="center">Interactive cli tool for HTTP inspection</td>
+</tr>
+<tr>
+<td>Fetch/JS</td>
+<td align="left"><a href="https://github.com/003random/getJS" target="_blank" rel="noopener">getJS</a></td>
+<td align="center">A tool to fastly get all javascript sources/files</td>
+</tr>
+<tr>
+<td>Fetch/WSOCK</td>
+<td align="left"><a href="https://github.com/hahwul/websocket-connection-smuggler" target="_blank" rel="noopener">websocket-connection-smuggler</a></td>
+<td align="center">websocket-connection-smuggler</td>
+</tr>
+<tr>
+<td>Scanner/CORS</td>
+<td align="left"><a href="https://github.com/Shivangx01b/CorsMe" target="_blank" rel="noopener">CorsMe</a></td>
+<td align="center">Cross Origin Resource Sharing MisConfiguration Scanner</td>
+</tr>
+<tr>
+<td>Scanner/CORS</td>
+<td align="left"><a href="https://github.com/s0md3v/Corsy" target="_blank" rel="noopener">Corsy</a></td>
+<td align="center">CORS Misconfiguration Scanner</td>
+</tr>
+<tr>
+<td>Scanner/CRLF</td>
+<td align="left"><a href="https://github.com/dwisiswant0/crlfuzz" target="_blank" rel="noopener">crlfuzz</a></td>
+<td align="center">A fast tool to scan CRLF vulnerability written in Go</td>
+</tr>
+<tr>
+<td>Scanner/FUZZ</td>
+<td align="left"><a href="https://github.com/1N3/BruteX" target="_blank" rel="noopener">BruteX</a></td>
+<td align="center">Automatically brute force all services running on a target.</td>
+</tr>
+<tr>
+<td>Scanner/FUZZ</td>
+<td align="left"><a href="https://github.com/codingo/VHostScan" target="_blank" rel="noopener">VHostScan</a></td>
+<td align="center">A virtual host scanner that performs reverse lookups, can be used with pivot tools, detect catch-all scenarios, work around wildcards, aliases and dynamic default pages.</td>
+</tr>
+<tr>
+<td>Scanner/FUZZ</td>
+<td align="left"><a href="https://github.com/ffuf/ffuf" target="_blank" rel="noopener">ffuf</a></td>
+<td align="center">Fast web fuzzer written in Go</td>
+</tr>
+<tr>
+<td>Scanner/FUZZ</td>
+<td align="left"><a href="https://github.com/vanhauser-thc/thc-hydra" target="_blank" rel="noopener">thc-hydra</a></td>
+<td align="center">hydra</td>
+</tr>
+<tr>
+<td>Scanner/FUZZ</td>
+<td align="left"><a href="https://github.com/xmendez/wfuzz" target="_blank" rel="noopener">wfuzz</a></td>
+<td align="center">Web application fuzzer</td>
+</tr>
+<tr>
+<td>Scanner/GQL</td>
+<td align="left"><a href="https://github.com/swisskyrepo/GraphQLmap" target="_blank" rel="noopener">GraphQLmap</a></td>
+<td align="center">GraphQLmap is a scripting engine to interact with a graphql endpoint for pentesting purposes.</td>
+</tr>
+<tr>
+<td>Scanner/LFI</td>
+<td align="left"><a href="https://github.com/D35m0nd142/LFISuite" target="_blank" rel="noopener">LFISuite</a></td>
+<td align="center">Totally Automatic LFI Exploiter (+ Reverse Shell) and Scanner</td>
+</tr>
+<tr>
+<td>Scanner/LFI</td>
+<td align="left"><a href="https://github.com/wireghoul/dotdotpwn" target="_blank" rel="noopener">dotdotpwn</a></td>
+<td align="center">DotDotPwn - The Directory Traversal Fuzzer</td>
+</tr>
+<tr>
+<td>Scanner/NOSQL</td>
+<td align="left"><a href="https://github.com/codingo/NoSQLMap" target="_blank" rel="noopener">NoSQLMap</a></td>
+<td align="center">Automated NoSQL database enumeration and web application exploitation tool.</td>
+</tr>
+<tr>
+<td>Scanner/NOSQL</td>
+<td align="left"><a href="https://github.com/Charlie-belmer/nosqli" target="_blank" rel="noopener">nosqli</a></td>
+<td align="center">NoSql Injection CLI tool</td>
+</tr>
+<tr>
+<td>Scanner/RECON</td>
+<td align="left"><a href="https://github.com/j3ssie/Osmedeus" target="_blank" rel="noopener">Osmedeus</a></td>
+<td align="center">Fully automated offensive security framework for reconnaissance and vulnerability scanning</td>
+</tr>
+<tr>
+<td>Scanner/RECON</td>
+<td align="left"><a href="https://github.com/1N3/Sn1per" target="_blank" rel="noopener">Sn1per</a></td>
+<td align="center">Automated pentest framework for offensive security experts</td>
+</tr>
+<tr>
+<td>Scanner/RECON</td>
+<td align="left"><a href="https://github.com/EdOverflow/megplus" target="_blank" rel="noopener">megplus</a></td>
+<td align="center">Automated reconnaissance wrapper — TomNomNom's meg on steroids. [DEPRECATED]</td>
+</tr>
+<tr>
+<td>Scanner/S3</td>
+<td align="left"><a href="https://github.com/jordanpotti/AWSBucketDump" target="_blank" rel="noopener">AWSBucketDump</a></td>
+<td align="center">Security Tool to Look For Interesting Files in S3 Buckets</td>
+</tr>
+<tr>
+<td>Scanner/S3</td>
+<td align="left"><a href="https://github.com/sa7mon/S3Scanner" target="_blank" rel="noopener">S3Scanner</a></td>
+<td align="center">Scan for open AWS S3 buckets and dump the contents</td>
+</tr>
+<tr>
+<td>Scanner/SMUGGLE</td>
+<td align="left"><a href="https://github.com/BishopFox/h2csmuggler" target="_blank" rel="noopener">h2csmuggler</a></td>
+<td align="center">HTTP Request Smuggling over HTTP/2 Cleartext (h2c)</td>
+</tr>
+<tr>
+<td>Scanner/SMUGGLE</td>
+<td align="left"><a href="https://github.com/defparam/smuggler" target="_blank" rel="noopener">smuggler</a></td>
+<td align="center">Smuggler - An HTTP Request Smuggling / Desync testing tool written in Python 3</td>
+</tr>
+<tr>
+<td>Scanner/SQL</td>
+<td align="left"><a href="https://gitlab.com/kalilinux/packages/sqlninja" rel="noopener" target="_blank">SQLNinja</a></td>
+<td align="center">SQL Injection scanner</td>
+</tr>
+<tr>
+<td>Scanner/SQL</td>
+<td align="left"><a href="https://github.com/the-robot/sqliv" target="_blank" rel="noopener">sqliv</a></td>
+<td align="center">massive SQL injection vulnerability scanner</td>
+</tr>
+<tr>
+<td>Scanner/SQL</td>
+<td align="left"><a href="https://github.com/sqlmapproject/sqlmap" target="_blank" rel="noopener">sqlmap</a></td>
+<td align="center">Automatic SQL injection and database takeover tool</td>
+</tr>
+<tr>
+<td>Scanner/SSL</td>
+<td align="left"><a href="https://github.com/hahwul/a2sv" target="_blank" rel="noopener">a2sv</a></td>
+<td align="center">Auto Scanning to SSL Vulnerability</td>
+</tr>
+<tr>
+<td>Scanner/SSL</td>
+<td align="left"><a href="https://github.com/drwetter/testssl.sh" target="_blank" rel="noopener">testssl.sh</a></td>
+<td align="center">Testing TLS/SSL encryption anywhere on any port</td>
+</tr>
+<tr>
+<td>Scanner/SSRF</td>
+<td align="left"><a href="https://github.com/swisskyrepo/SSRFmap" target="_blank" rel="noopener">SSRFmap</a></td>
+<td align="center">Automatic SSRF fuzzer and exploitation tool</td>
+</tr>
+<tr>
+<td>Scanner/SSRF</td>
+<td align="left"><a href="https://github.com/teknogeek/ssrf-sheriff" target="_blank" rel="noopener">ssrf-sheriff</a></td>
+<td align="center">A simple SSRF-testing sheriff written in Go</td>
+</tr>
+<tr>
+<td>Scanner/WP</td>
+<td align="left"><a href="https://github.com/wpscanteam/wpscan" target="_blank" rel="noopener">wpscan</a></td>
+<td align="center">WPScan is a free, for non-commercial use, black box WordPress Vulnerability Scanner written for security professionals and blog maintainers to test the security of their WordPress websites.</td>
+</tr>
+<tr>
+<td>Scanner/WVS</td>
+<td align="left"><a href="https://github.com/s0md3v/Striker" target="_blank" rel="noopener">Striker</a></td>
+<td align="center">Striker is an offensive information and vulnerability scanner.</td>
+</tr>
+<tr>
+<td>Scanner/WVS</td>
+<td align="left"><a href="https://github.com/Arachni/arachni" target="_blank" rel="noopener">arachni</a></td>
+<td align="center">Web Application Security Scanner Framework</td>
+</tr>
+<tr>
+<td>Scanner/WVS</td>
+<td align="left"><a href="https://github.com/sullo/nikto" target="_blank" rel="noopener">nikto</a></td>
+<td align="center">Nikto web server scanner</td>
+</tr>
+<tr>
+<td>Scanner/WVS</td>
+<td align="left"><a href="https://github.com/skavngr/rapidscan" target="_blank" rel="noopener">rapidscan</a></td>
+<td align="center">The Multi-Tool Web Vulnerability Scanner.</td>
+</tr>
+<tr>
+<td>Scanner/WVS</td>
+<td align="left"><a href="https://github.com/Grunny/zap-cli" target="_blank" rel="noopener">zap-cli</a></td>
+<td align="center">A simple tool for interacting with OWASP ZAP from the commandline.</td>
+</tr>
+<tr>
+<td>Scanner/XSS</td>
+<td align="left"><a href="https://github.com/s0md3v/XSStrike" target="_blank" rel="noopener">XSStrike</a></td>
+<td align="center">Most advanced XSS scanner.</td>
+</tr>
+<tr>
+<td>Scanner/XSS</td>
+<td align="left"><a href="https://github.com/hahwul/XSpear" target="_blank" rel="noopener">XSpear</a></td>
+<td align="center">Powerfull XSS Scanning and Parameter analysis tool&amp;gem</td>
+</tr>
+<tr>
+<td>Scanner/XSS</td>
+<td align="left"><a href="https://github.com/hahwul/dalfox" target="_blank" rel="noopener">dalfox</a></td>
+<td align="center"><g-emoji class="g-emoji" alias="waning_crescent_moon" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f318.png">🌘</g-emoji><g-emoji class="g-emoji" alias="fox_face" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f98a.png">🦊</g-emoji> DalFox(Finder Of XSS) / Parameter Analysis and XSS Scanning tool based on golang</td>
+</tr>
+<tr>
+<td>Scanner/XSS</td>
+<td align="left"><a href="https://github.com/fcavallarin/domdig" target="_blank" rel="noopener">domdig</a></td>
+<td align="center">DOM XSS scanner for Single Page Applications</td>
+</tr>
+<tr>
+<td>Scanner/XSS</td>
+<td align="left"><a href="https://github.com/ssl/ezXSS" target="_blank" rel="noopener">ezXSS</a></td>
+<td align="center">ezXSS is an easy way for penetration testers and bug bounty hunters to test (blind) Cross Site Scripting.</td>
+</tr>
+<tr>
+<td>Scanner/XSS</td>
+<td align="left"><a href="https://github.com/dwisiswant0/findom-xss" target="_blank" rel="noopener">findom-xss</a></td>
+<td align="center">A fast DOM based XSS vulnerability scanner with simplicity.</td>
+</tr>
+<tr>
+<td>Scanner/XSS</td>
+<td align="left"><a href="https://github.com/epsylon/xsser" target="_blank" rel="noopener">xsser</a></td>
+<td align="center">Cross Site "Scripter" (aka XSSer) is an automatic -framework- to detect, exploit and report XSS vulnerabilities in web-based applications.</td>
+</tr>
+<tr>
+<td>ToolBox/ALL</td>
+<td align="left"><a href="https://github.com/m4ll0k/Bug-Bounty-Toolz" target="_blank" rel="noopener">Bug-Bounty-Toolz</a></td>
+<td align="center">BBT - Bug Bounty Tools</td>
+</tr>
+<tr>
+<td>ToolBox/ALL</td>
+<td align="left"><a href="https://github.com/gchq/CyberChef" target="_blank" rel="noopener">CyberChef</a></td>
+<td align="center">The Cyber Swiss Army Knife - a web app for encryption, encoding, compression and data analysis</td>
+</tr>
+<tr>
+<td>ToolBox/ALL</td>
+<td align="left"><a href="https://github.com/tomnomnom/hacks" target="_blank" rel="noopener">hacks</a></td>
+<td align="center">A collection of hacks and one-off scripts</td>
+</tr>
+<tr>
+<td>ToolBox/ALL</td>
+<td align="left"><a href="https://github.com/gwen001/pentest-tools" target="_blank" rel="noopener">pentest-tools</a></td>
+<td align="center">Custom pentesting tools</td>
+</tr>
+<tr>
+<td>Utility/B-ADDON</td>
+<td align="left"><a href="https://github.com/fransr/postMessage-tracker" target="_blank" rel="noopener">postMessage-tracker</a></td>
+<td align="center">A Chrome Extension to track postMessage usage (url, domain and stack) both by logging using CORS and also visually as an extension-icon</td>
+</tr>
+<tr>
+<td>Utility/BRIDGE</td>
+<td align="left"><a href="https://github.com/m4ll0k/Atlas" target="_blank" rel="noopener">Atlas</a></td>
+<td align="center">Quick SQLMap Tamper Suggester</td>
+</tr>
+<tr>
+<td>Utility/CALLBACK</td>
+<td align="left"><a href="https://github.com/ArturSS7/TukTuk" target="_blank" rel="noopener">TukTuk</a></td>
+<td align="center">Tool for catching and logging different types of requests.</td>
+</tr>
+<tr>
+<td>Utility/CALLBACK</td>
+<td align="left"><a href="https://github.com/allyomalley/dnsobserver" target="_blank" rel="noopener">dnsobserver</a></td>
+<td align="center">A handy DNS service written in Go to aid in the detection of several types of blind vulnerabilities. It monitors a pentester's server for out-of-band DNS interactions and sends lookup notifications via Slack.</td>
+</tr>
+<tr>
+<td>Utility/CRACK</td>
+<td align="left"><a href="https://github.com/hashcat/hashcat/" target="_blank" rel="noopener">hashcat</a></td>
+<td align="center">World's fastest and most advanced password recovery utility</td>
+</tr>
+<tr>
+<td>Utility/CSP</td>
+<td align="left"><a href="https://csp-evaluator.withgoogle.com" rel="noopener" target="_blank">CSP Evaluator</a></td>
+<td align="center">Online CSP Evaluator from google</td>
+</tr>
+<tr>
+<td>Utility/ENV</td>
+<td align="left"><a href="https://github.com/1ndianl33t/Gf-Patterns" target="_blank" rel="noopener">Gf-Patterns</a></td>
+<td align="center">GF Paterns For (ssrf,RCE,Lfi,sqli,ssti,idor,url redirection,debug_logic) parameters grep</td>
+</tr>
+<tr>
+<td>Utility/ENV</td>
+<td align="left"><a href="https://github.com/nahamsec/recon_profile" target="_blank" rel="noopener">recon_profile</a></td>
+<td align="center">Recon profile (bash profile) for bugbounty</td>
+</tr>
+<tr>
+<td>Utility/ETC</td>
+<td align="left"><a href="https://www.hahwul.com/p/phoenix.html" rel="noopener" target="_blank">Phoenix</a></td>
+<td align="center">hahwul's online tools</td>
+</tr>
+<tr>
+<td>Utility/FIND</td>
+<td align="left"><a href="https://github.com/junegunn/fzf" target="_blank" rel="noopener">fzf</a></td>
+<td align="center">A command-line fuzzy finder</td>
+</tr>
+<tr>
+<td>Utility/FLOW</td>
+<td align="left"><a href="https://sequencediagram.org" rel="noopener" target="_blank">SequenceDiagram</a></td>
+<td align="center">Online tool for creating UML sequence diagrams</td>
+</tr>
+<tr>
+<td>Utility/GREP</td>
+<td align="left"><a href="https://github.com/tomnomnom/gf" target="_blank" rel="noopener">gf</a></td>
+<td align="center">A wrapper around grep, to help you grep for things</td>
+</tr>
+<tr>
+<td>Utility/JSON</td>
+<td align="left"><a href="https://github.com/tomnomnom/gron" target="_blank" rel="noopener">gron</a></td>
+<td align="center">Make JSON greppable!</td>
+</tr>
+<tr>
+<td>Utility/JWT</td>
+<td align="left"><a href="https://github.com/brendan-rius/c-jwt-cracker" target="_blank" rel="noopener">c-jwt-cracker</a></td>
+<td align="center">JWT brute force cracker written in C</td>
+</tr>
+<tr>
+<td>Utility/JWT</td>
+<td align="left"><a href="https://github.com/lmammino/jwt-cracker" target="_blank" rel="noopener">jwt-cracker</a></td>
+<td align="center">Simple HS256 JWT token brute force cracker</td>
+</tr>
+<tr>
+<td>Utility/JWT</td>
+<td align="left"><a href="https://github.com/hahwul/jwt-hack" target="_blank" rel="noopener">jwt-hack</a></td>
+<td align="center"><g-emoji class="g-emoji" alias="nut_and_bolt" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f529.png">🔩</g-emoji> jwt-hack is tool for hacking / security testing to JWT. Supported for En/decoding JWT, Generate payload for JWT attack and very fast cracking(dict/brutefoce)</td>
+</tr>
+<tr>
+<td>Utility/PAYLOAD</td>
+<td align="left"><a href="https://github.com/NotSoSecure/Blacklist3r" target="_blank" rel="noopener">Blacklist3r</a></td>
+<td align="center">project-blacklist3r</td>
+</tr>
+<tr>
+<td>Utility/PAYLOAD</td>
+<td align="left"><a href="https://github.com/1N3/Findsploit" target="_blank" rel="noopener">Findsploit</a></td>
+<td align="center">Find exploits in local and online databases instantly</td>
+</tr>
+<tr>
+<td>Utility/PAYLOAD</td>
+<td align="left"><a href="https://github.com/tarunkant/Gopherus" target="_blank" rel="noopener">Gopherus</a></td>
+<td align="center">This tool generates gopher link for exploiting SSRF and gaining RCE in various servers</td>
+</tr>
+<tr>
+<td>Utility/PAYLOAD</td>
+<td align="left"><a href="https://github.com/1N3/IntruderPayloads" target="_blank" rel="noopener">IntruderPayloads</a></td>
+<td align="center">A collection of Burpsuite Intruder payloads, BurpBounty payloads, fuzz lists, malicious file uploads and web pentesting methodologies and checklists.</td>
+</tr>
+<tr>
+<td>Utility/PAYLOAD</td>
+<td align="left"><a href="https://github.com/swisskyrepo/PayloadsAllTheThings" target="_blank" rel="noopener">PayloadsAllTheThings</a></td>
+<td align="center">A list of useful payloads and bypass for Web Application Security and Pentest/CTF</td>
+</tr>
+<tr>
+<td>Utility/PAYLOAD</td>
+<td align="left"><a href="https://github.com/dwisiswant0/hinject" target="_blank" rel="noopener">hinject</a></td>
+<td align="center">Host Header Injection Checker</td>
+</tr>
+<tr>
+<td>Utility/PAYLOAD</td>
+<td align="left"><a href="https://github.com/BuffaloWill/oxml_xxe" target="_blank" rel="noopener">oxml_xxe</a></td>
+<td align="center">A tool for embedding XXE/XML exploits into different filetypes</td>
+</tr>
+<tr>
+<td>Utility/PAYLOAD</td>
+<td align="left"><a href="https://github.com/PortSwigger/xss-cheatsheet-data" target="_blank" rel="noopener">xss-cheatsheet-data</a></td>
+<td align="center">This repository contains all the XSS cheatsheet data to allow contributions from the community.</td>
+</tr>
+<tr>
+<td>Utility/PAYLOAD</td>
+<td align="left"><a href="https://github.com/frohoff/ysoserial" target="_blank" rel="noopener">ysoserial</a></td>
+<td align="center">A proof-of-concept tool for generating payloads that exploit unsafe Java object deserialization.</td>
+</tr>
+<tr>
+<td>Utility/PAYLOAD</td>
+<td align="left"><a href="https://github.com/pwntester/ysoserial.net" target="_blank" rel="noopener">ysoserial.net</a></td>
+<td align="center">Deserialization payload generator for a variety of .NET formatters</td>
+</tr>
+<tr>
+<td>Utility/PENTEST</td>
+<td align="left"><a href="https://github.com/pry0cc/axiom" target="_blank" rel="noopener">axiom</a></td>
+<td align="center">A dynamic infrastructure toolkit for red teamers and bug bounty hunters!</td>
+</tr>
+<tr>
+<td>Utility/PENTEST</td>
+<td align="left"><a href="https://github.com/cytopia/pwncat" target="_blank" rel="noopener">pwncat</a></td>
+<td align="center">pwncat - netcat on steroids with Firewall, IDS/IPS evasion, bind and reverse shell, self-injecting shell and port forwarding magic - and its fully scriptable with Python (PSE)</td>
+</tr>
+<tr>
+<td>Utility/S3</td>
+<td align="left"><a href="https://github.com/hahwul/s3reverse" target="_blank" rel="noopener">s3reverse</a></td>
+<td align="center">The format of various s3 buckets is convert in one format. for bugbounty and security testing.</td>
+</tr>
+<tr>
+<td>Utility/SHOT</td>
+<td align="left"><a href="https://github.com/sensepost/gowitness" target="_blank" rel="noopener">gowitness</a></td>
+<td align="center"><g-emoji class="g-emoji" alias="mag" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f50d.png">🔍</g-emoji> gowitness - a golang, web screenshot utility using Chrome Headless</td>
+</tr>
+<tr>
+<td>Utility/SNIPPET</td>
+<td align="left"><a href="https://github.com/knqyf263/pet" target="_blank" rel="noopener">pet</a></td>
+<td align="center">Simple command-line snippet manager, written in Go.</td>
+</tr>
+<tr>
+<td>Utility/TEMPLATE</td>
+<td align="left"><a href="https://github.com/fransr/bountyplz" target="_blank" rel="noopener">bountyplz</a></td>
+<td align="center">Automated security reporting from markdown templates (HackerOne and Bugcrowd are currently the platforms supported)</td>
+</tr>
+<tr>
+<td>Utility/TEMPLATE</td>
+<td align="left"><a href="https://github.com/fransr/template-generator" target="_blank" rel="noopener">template-generator</a></td>
+<td align="center">A simple variable based template editor using handlebarjs+strapdownjs. The idea is to use variables in markdown based files to easily replace the variables with content. Data is saved temporarily in local storage. PHP is only needed to generate the list of files in the dropdown of templates.</td>
+</tr>
+<tr>
+<td>Utility/URL</td>
+<td align="left"><a href="https://github.com/tomnomnom/anew" target="_blank" rel="noopener">anew</a></td>
+<td align="center">A tool for adding new lines to files, skipping duplicates</td>
+</tr>
+<tr>
+<td>Utility/URL</td>
+<td align="left"><a href="https://github.com/tomnomnom/burl" target="_blank" rel="noopener">burl</a></td>
+<td align="center">A Broken-URL Checker</td>
+</tr>
+<tr>
+<td>Utility/URL</td>
+<td align="left"><a href="https://github.com/dwisiswant0/cf-check" target="_blank" rel="noopener">cf-check</a></td>
+<td align="center">Cloudflare Checker written in Go</td>
+</tr>
+<tr>
+<td>Utility/URL</td>
+<td align="left"><a href="https://github.com/lc/gau" target="_blank" rel="noopener">gau</a></td>
+<td align="center">Fetch known URLs from AlienVault's Open Threat Exchange, the Wayback Machine, and Common Crawl.</td>
+</tr>
+<tr>
+<td>Utility/URL</td>
+<td align="left"><a href="https://github.com/tomnomnom/qsreplace" target="_blank" rel="noopener">qsreplace</a></td>
+<td align="center">Accept URLs on stdin, replace all query string values with a user-supplied value</td>
+</tr>
+<tr>
+<td>Utility/URL</td>
+<td align="left"><a href="https://github.com/tomnomnom/unfurl" target="_blank" rel="noopener">unfurl</a></td>
+<td align="center">Pull out bits of URLs provided on stdin</td>
+</tr>
+<tr>
+<td>Utility/URL</td>
+<td align="left"><a href="https://github.com/1ndianl33t/urlprobe" target="_blank" rel="noopener">urlprobe</a></td>
+<td align="center">Urls status code &amp; content length checker</td>
+</tr>
+<tr>
+<td>Utility/WORD</td>
+<td align="left"><a href="https://github.com/assetnote/wordlists" target="_blank" rel="noopener">wordlists</a></td>
+<td align="center">Automated &amp; Manual Wordlists provided by Assetnote</td>
+</tr>
+<tr>
+<td>Utility/WORD</td>
+<td align="left"><a href="https://github.com/internetwache/CT_subdomains" target="_blank" rel="noopener">CT_subdomains</a></td>
+<td align="center">An hourly updated list of subdomains gathered from certificate transparency logs</td>
+</tr>
+<tr>
+<td>Utility/WORD</td>
+<td align="left"><a href="https://github.com/danielmiessler/SecLists" target="_blank" rel="noopener">SecLists</a></td>
+<td align="center">SecLists is the security tester's companion. It's a collection of multiple types of lists used during security assessments, collected in one place. List types include usernames, passwords, URLs, sensitive data patterns, fuzzing payloads, web shells, and many more.</td>
+</tr>
+<tr>
+<td>Utility/WORD</td>
+<td align="left"><a href="https://github.com/emadshanab/subs_all" target="_blank" rel="noopener">subs_all</a></td>
+<td align="center">Subdomain Enumeration Wordlist. 8956437 unique words. Updated.</td>
+</tr>
+</tbody>
+</table>
+
+
+<hr>
+<p><strong>欢迎在文章最后评论区【留言和讨论】，当然，欢迎点击文章最后的打赏按键，请博主一杯冰阔乐，笑～</strong></p>
+
+<table>
+  <tbody><tr>
+    <td><img width="100" src="https://cdn.jsdelivr.net/gh//SpadeZ-A/cdn/img/alipay.bmp"></td>    <td><img width="100" src="https://cdn.jsdelivr.net/gh//SpadeZ-A/cdn/img/wechat.bmp"></td>    <td><img width="100" src="https://cdn.jsdelivr.net/gh//SpadeZ-A/cdn/img/zan.png"></td>   
+  </tr>
+</tbody></table>
+
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+            </div>
+            <hr/>
+
+            
+            <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.88rem;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-large waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fa fa-close"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力!</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="https://cdn.jsdelivr.net/gh//SpadeZ-A/cdn/img/alipay.bmp" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="https://cdn.jsdelivr.net/gh//SpadeZ-A/cdn/img/wechat.bmp" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+            
+
+            <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+
+<div id="article-share">
+    
+    <div class="social-share" data-disabled="qzone" data-wechat-qrcode-helper="<p>微信里点“发现”->“扫一扫”二维码便可查看分享。</p>"></div>
+    
+</div>
+
+<script src="/libs/share/js/social-share.min.js"></script>
+
+            
+            
+            
+            <div class="reprint1">
+                <p>
+                    <span class="reprint1-tip">
+                        <i class="fa fa-exclamation-circle"></i>&nbsp;&nbsp;转载请注明:
+                    </span>
+                    <a href="https://www.spade-z.com" class="b-link-green">Spade-Zの博客</a>
+                    <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
+                    <a href="/archives/f901a354.html" class="b-link-green">超酷的100款网络黑客工具集合</a>
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    
+        <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
+<link rel="stylesheet" href="/css/my-gitalk.css">
+
+<div class="card gitalk-card" data-aos="fade-up">
+    <div id="gitalk-container" class="card-content"></div>
+</div>
+<script src="/js/md5.min.js"></script>
+<script src="/libs/gitalk/gitalk.min.js"></script>
+<script>
+    let gitalk = new Gitalk({
+        clientID: '2f6d957ac7880bd46966',
+        clientSecret: '98c7d2ae73d8284aee16697a178cd901ba929d3f',
+        repo: 'Blog-comment',
+        owner: 'SpadeZ-A',
+        admin: ["SpadeZ-A"],
+        id: md5('archives/f901a354.html'),
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+
+    gitalk.render('gitalk-container');
+</script>
+    
+
+    
+
+    
+
+    
+
+    
+        <style>
+    .valine-card {
+        margin: 1.5rem auto;
+    }
+
+    .valine-card .card-content {
+        padding: 20px 20px 5px 20px;
+    }
+    /* valine 评论框增加背景图片 */
+    #vcomments textarea {
+        box-sizing: border-box;
+        background: url("") 100% 100% no-repeat;
+    }
+
+    #vcomments input[type=text],
+    #vcomments input[type=email],
+    #vcomments input[type=url],
+    #vcomments textarea {
+        box-sizing: border-box;
+    }
+
+    #vcomments p {
+        margin: 2px 2px 10px;
+        font-size: 1.05rem;
+        line-height: 1.78rem;
+    }
+
+    #vcomments blockquote p {
+        text-indent: 0.2rem;
+    }
+
+    #vcomments a {
+        padding: 0 2px;
+        color: #42b983;
+        font-weight: 500;
+        text-decoration: underline;
+    }
+
+    #vcomments img {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+
+    #vcomments ol li {
+        list-style-type: decimal;
+    }
+
+    #vcomments ol,
+    ul {
+        display: block;
+        padding-left: 2em;
+        word-spacing: 0.05rem;
+    }
+
+    #vcomments ul li,
+    ol li {
+        display: list-item;
+        line-height: 1.8rem;
+        font-size: 1rem;
+    }
+
+    #vcomments ul li {
+        list-style-type: disc;
+    }
+
+    #vcomments ul ul li {
+        list-style-type: circle;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    #vcomments table, th, td {
+        border: 0;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments h1 {
+        font-size: 1.85rem;
+        font-weight: bold;
+        line-height: 2.2rem;
+    }
+
+    #vcomments h2 {
+        font-size: 1.65rem;
+        font-weight: bold;
+        line-height: 1.9rem;
+    }
+
+    #vcomments h3 {
+        font-size: 1.45rem;
+        font-weight: bold;
+        line-height: 1.7rem;
+    }
+
+    #vcomments h4 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    #vcomments h5 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        line-height: 1.4rem;
+    }
+
+    #vcomments h6 {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    #vcomments p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    #vcomments hr {
+        margin: 12px 0;
+        border: 0;
+        border-top: 1px solid #ccc;
+    }
+
+    #vcomments blockquote {
+        margin: 15px 0;
+        border-left: 5px solid #42b983;
+        padding: 1rem 0.8rem 0.3rem 0.8rem;
+        color: #666;
+        background-color: rgba(66, 185, 131, .1);
+    }
+
+    #vcomments pre {
+        font-family: monospace, monospace;
+        padding: 1.2em;
+        margin: .5em 0;
+        background: #272822;
+        overflow: auto;
+        border-radius: 0.3em;
+        tab-size: 4;
+    }
+
+    #vcomments code {
+        font-family: monospace, monospace;
+        padding: 1px 3px;
+        font-size: 0.92rem;
+        color: #e96900;
+        background-color: #f8f8f8;
+        border-radius: 2px;
+    }
+
+    #vcomments pre code {
+        font-family: monospace, monospace;
+        padding: 0;
+        color: #e8eaf6;
+        background-color: #272822;
+    }
+
+    #vcomments pre[class*="language-"] {
+        padding: 1.2em;
+        margin: .5em 0;
+    }
+
+    #vcomments code[class*="language-"],
+    pre[class*="language-"] {
+        color: #e8eaf6;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+
+    #vcomments b,
+    strong {
+        font-weight: bold;
+    }
+
+    #vcomments dfn {
+        font-style: italic;
+    }
+
+    #vcomments small {
+        font-size: 85%;
+    }
+
+    #vcomments cite {
+        font-style: normal;
+    }
+
+    #vcomments mark {
+        background-color: #fcf8e3;
+        padding: .2em;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+
+    /* 修复评论第一行位置错位 */
+    .v .vlist .vcard {
+    padding-top: 2.5em !important ;
+    }
+</style>
+
+<div class="card valine-card" data-aos="fade-up">
+    <div id="vcomments" class="card-content"></div>
+</div>
+
+<script src="/libs/valine/av-min.js"></script>
+<script src="/libs/valine/Valine.min.js"></script>
+<!-- <link rel="stylesheet" type="text/css" href="/libs//libs/jQuery-emoji/dist/css/jquery.emoji.css">
+<script src="/libs//libs/jQuery-emoji/dist/js/jquery.emoji.min.js"></script>
+<script src="/libs//libs/jQuery-emoji/dist/js/emoji.list.js"></script> -->
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: 'BppJAl9iCAm1fI1nvBYBNAau-MdYXbMMI',
+        appKey: 'l3mOLJVxyVA6wtvMoGaGOM30',
+        notify: 'true' === 'true',
+        verify: 'true' === 'true',
+        visitor: 'true' === 'true',
+        avatar: 'mm',
+        pageSize: '10',
+        lang: 'zh-cn',
+        placeholder: 'just go go',
+
+    });
+
+//     function parse_emoji() {
+//     jQuery(".vcontent").emojiParse({
+//       basePath: '/libs/jQuery-emoji/images/emoji',
+//       icons: emojiLists   // 注：详见 js/emoji.list.js
+//     });
+//   }
+  
+//   setTimeout(function() {
+//     // jQuery emoji 解析
+//     parse_emoji();
+//     // jquery emoji 初始化
+//     jQuery(".veditor").emoji({
+//       showTab: true,
+//       animation: 'slide',
+//       basePath: '/libs/jQuery-emoji/images/emoji',
+//       icons: emojiLists  // 注：详见 js/emoji.list.js
+//     });
+//     jQuery(".vmore").on("click", function() {
+//       setTimeout(function() {
+//         parse_emoji();
+//       }, 500);
+//     });
+//   }, 800)
+
+</script>
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/archives/f901a354.html">
+                    <div class="card-image">
+                        
+                        <img src="https://cdn.jsdelivr.net/gh//SpadeZ-A/cdn/img/featureimages16.png" class="responsive-img" alt="超酷的100款网络黑客工具集合">
+                        
+                        <span class="card-title">超酷的100款网络黑客工具集合</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+
+
+Type
+Name
+Description
+
+
+
+
+Army-Knife/SCAN
+jaeles
+The Swiss Army knife for automated Web Application Testing
+
+
+Army-Kn
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-11-27
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/黑客工具/" class="post-category" target="_blank">
+                                    黑客工具
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/网络安全/" target="_blank">
+                        <span class="chip bg-color">网络安全</span>
+                    </a>
+                    
+                    <a href="/tags/黑客-Hacker/" target="_blank">
+                        <span class="chip bg-color">黑客 (Hacker)</span>
+                    </a>
+                    
+                    <a href="/tags/黑客工具/" target="_blank">
+                        <span class="chip bg-color">黑客工具</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/archives/5c227977.html">
+                    <div class="card-image">
+                        
+                        <img src="https://cdn.jsdelivr.net/gh//SpadeZ-A/cdn/img/23-subdomain-enumeration-tools-01.jpg" class="responsive-img" alt="23款子域名枚举工具">
+                        
+                        <span class="card-title">23款子域名枚举工具</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            01_theHarvester
+一种非常简单但有效的扫描工具，用于渗透测试的早期阶段。使用它进行开源情报收集，并帮助确定外部威胁情况。该工具使用多个公共数据源收集 电子邮件、名称、子域、IP 和 URL。
+
+
+项目地址：https://gi
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-11-27
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/信息收集/" class="post-category" target="_blank">
+                                    信息收集
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/渗透测试/" target="_blank">
+                        <span class="chip bg-color">渗透测试</span>
+                    </a>
+                    
+                    <a href="/tags/网络安全/" target="_blank">
+                        <span class="chip bg-color">网络安全</span>
+                    </a>
+                    
+                    <a href="/tags/黑客-Hacker/" target="_blank">
+                        <span class="chip bg-color">黑客 (Hacker)</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: Spade-Zの博客<br />'
+            + '作者: Spade-Z<br />'
+            + '链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="fa fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fa fa-list"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            // headingsOffset: -205,
+            headingSelector: 'h1, h2, h3, h4, h5'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h1, h2, h3, h4, h5').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).slideUp(500);
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).slideDown(500);
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+    
+
+</main>
+
+
+        <footer class="page-footer bg-color">
+    <div class="container row center-align">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&copy; 2020 Spade-Z. <span class="with-love" id="heart"><i class="fa fa-heart" style="color:hsl(337, 100%, 72%)"></i> </span> 
+            <img src="https://travis-ci.com/SpadeZ-A/BlogBackup.svg?token=JpZ3vvo1GKaLDNYsC1ez&branch=master">
+            <br>
+            <span id="sitetime"></span><span class="my-face">ღゝ◡╹)ノ♡</span>
+            <br>
+
+            
+
+            
+                    
+                        <span id="busuanzi_container_site_pv" style='display:none'></span>
+                        总访问量: <span id="busuanzi_value_site_pv" class="white-color"></span>
+                    
+        
+                    
+                        <span id="busuanzi_container_site_uv" style='display:none'></span>
+                        人次&nbsp; | &nbsp;访客人数: <span id="busuanzi_value_site_uv" class="white-color"></span> 人
+                    
+    
+            
+
+            
+                &nbsp; | &nbsp;字数统计:&nbsp;
+                <span class="white-color">12.4k</span> 字
+            
+
+            
+            <br>
+
+        </div>
+
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/SpadeZ-A" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fa fa-github"></i>
+    </a>
+
+
+ 
+    <a href="https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=plasticpheasant4587@gmail.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fa fa-envelope-open"></i>
+    </a>
+
+
+
+
+    <a href="https://zhihu.com/people/spade-z-48" class="tooltipped" target="_blank" data-tooltip="访问我的知乎" data-position="top" data-delay="50">
+        <i class="fa fa-inverse">知</i>
+    </a>
+
+
+
+    <a href="http://wpa.qq.com/msgrd?v=3&uin=2859683701&site=qq&menu=yes" class="tooltipped" target="_blank" data-tooltip="访问我的QQ空间" data-position="top" data-delay="50">
+        <i class="fa fa-qq"></i>
+    </a>
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fa fa-rss"></i>
+    </a>
+</div>
+
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+<script language=javascript>
+    function siteTime() {
+        window.setTimeout("siteTime()", 1000);
+        var seconds = 1000;
+        var minutes = seconds * 60;
+        var hours = minutes * 60;
+        var days = hours * 24;
+        var years = days * 365;
+        var today = new Date();
+        var todayYear = today.getFullYear();
+        var todayMonth = today.getMonth() + 1;
+        var todayDate = today.getDate();
+        var todayHour = today.getHours();
+        var todayMinute = today.getMinutes();
+        var todaySecond = today.getSeconds();
+
+        /* Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+        year - 作为date对象的年份，为4位年份值
+        month - 0-11之间的整数，做为date对象的月份
+        day - 1-31之间的整数，做为date对象的天数
+        hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+        minutes - 0-59之间的整数，做为date对象的分钟数
+        seconds - 0-59之间的整数，做为date对象的秒数
+        microseconds - 0-999之间的整数，做为date对象的毫秒数 */
+
+        var t1 = Date.UTC(2020, 03, 20, 00, 00, 00); //北京时间2020-03-20 00:00:00
+        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+        var diff = t2 - t1;
+        var diffYears = Math.floor(diff / years);
+        var diffDays = Math.floor((diff / days) - diffYears * 365);
+        var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+        var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) / minutes);
+        var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours - diffMinutes *
+            minutes) / seconds);
+        document.getElementById("sitetime").innerHTML = "本站已勉强运行 " + diffYears + " 年 " + diffDays + " 天 " + diffHours +
+            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒" ;
+    } /*因为建站时间还没有一年，就将之注释掉了。需要的可以取消*/
+    siteTime();
+</script>
+
+<script>
+         $(document).ready(function () { 
+
+             var int = setInterval(fixCount, 50); // 50ms周期检测函数 
+             var pvcountOffset = 10000; // 初始化首次数据 
+             var uvcountOffset = 4000; 
+             
+             function fixCount() { 
+                 if (document.getElementById("busuanzi_container_site_pv").style.display != "none") { 
+                     $("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) + pvcountOffset); 
+                     clearInterval(int); 
+                     } 
+                if ($("#busuanzi_container_site_pv").css("display") != "none") { 
+                    $("#busuanzi_value_site_uv").html(parseInt($("#busuanzi_value_site_uv").html()) + uvcountOffset); // 加上初始数据 
+                    clearInterval(int); // 停止检测 
+                    }
+             } 
+        });
+ </script>
+
+
+
+
+        <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fa fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("/" + "search.xml", 'searchInput', 'searchResult');
+});
+</script>
+        <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fa fa-angle-up"></i>
+    </a>
+</div>
+
+
+        <script src="/libs/materialize/materialize.min.js"></script>
+        <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+        <script src="/libs/aos/aos.js"></script>
+        <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+        <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+        <script src="/js/matery.js"></script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+
+        
+            <script src="/libs/others/clicklove.js"></script>
+        
+
+        
+            <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+        
+
+        <script type="text/javascript">
+            var OriginTitile = document.title,
+                st;
+            document.addEventListener("visibilitychange", function () {
+                document.hidden ? (document.title = "看不见我🙈~看不见我🙈~", clearTimeout(st)) : (document.title =
+                    "(๑•̀ㅂ•́) ✧被发现了～", st = setTimeout(function () {
+                        document.title = OriginTitile
+                    }, 3e3))
+            })
+        </script>
+
+        <!-- 鼠标点击烟花爆炸效果  -->
+        
+            <canvas class="fireworks" style="position: fixed; left: 0; top: 0; z-index: 1; pointer-events: none;"></canvas>
+            <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
+            <script type="text/javascript" src="/js/fireworks.js"></script>
+        
+
+        <!-- 背景雪花飘落特效洪卫  -->
+        
+            <script type="text/javascript">
+            //只在桌面版网页启用特效
+            var windowWidth = $(window).width();
+            if (windowWidth > 768) {
+                document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
+            }
+            </script>
+        
+
+        <!-- 鼠标点击文字特效 -->
+        
+            <script src="/js/wenzi.js" type="text/javascript"></script>
+        
+
+        <!-- 背景雪花飘落特效  -->
+        
+            <script type="text/javascript">
+                var windowWidth = $(window).width();
+                if (windowWidth > 768) {
+                    document.write('<script type="text/javascript" src="/js/xuehuapiaoluo.js"><\/script>');
+                }
+            </script>
+        
+
+        <!-- 在线聊天工具   -->
+        
+            <script src="//code.tidio.co/xxxxxxxxxxxxxxxxxxxxxxxxxxx.js"></script>
+            <!--  在线聊天位置自定义    -->
+            <script> 
+                $(document).ready(function () {
+
+                    setInterval(change_Tidio, 50);  
+                    function change_Tidio() { 
+
+                        var tidio=$("#tidio-chat iframe");
+                        if(tidio.css("display")=="block"&& $(window).width()>977 ){
+                            document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" &&$(window).width()>977)>0? "-40px" : ($("div.toc-title").length&&$(window).width()>977)>0?"80px":"20px";   
+                            document.getElementById("tidio-chat-iframe").style.right="-15px";   
+                            document.getElementById("tidio-chat-iframe").style.height=parseInt(tidio.css("height"))>=520?"520px":tidio.css("height");
+                            document.getElementById("tidio-chat-iframe").style.zIndex="997";
+                        } 
+                        else if(tidio.css("display")=="block"&&$(window).width()>601 &&$(window).width()<992 ){
+                            document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" && 601< $(window).width()<992)>0? "-40px":"20px" ;   
+                            document.getElementById("tidio-chat-iframe").style.right="-15px"; 
+                            document.getElementById("tidio-chat-iframe").style.zIndex="997";
+                        }
+                        else if(tidio.css("display")=="block"&&$(window).width()<601 && parseInt(tidio.css("height"))<230){
+                            document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" && $(window).width()<601)>0? "-10px":"45px" ;   
+                            document.getElementById("tidio-chat-iframe").style.zIndex="997";
+                        }
+
+                        if( tidio.css("display")=="block"&&$(window).width()<601 && parseInt(tidio.css("height"))>=230){
+                            document.getElementById("tidio-chat-iframe").style.zIndex="998";
+                        }
+                    } 
+                }); 
+            </script>
+        
+
+        <!-- 背景 canvas-nest  -->
+        
+            <script type="text/javascript">
+            var windowWidth = $(window).width();
+            if (windowWidth > 992) {
+                document.write('<script type="text/javascript" color="0,0,255" pointColor="0,0,255" opacity= "0.8" zIndex="--1" count="150"src="/libs/background/canvas-nest.js"><\/script>');
+            }
+            </script>
+        
+
+        <!-- 背景静止彩带  -->
+        
+
+        <!-- 背景动态彩带 -->
+        
+            <script type="text/javascript">
+            var windowWidth = $(window).width();
+            if (windowWidth > 992) {
+                document.write('<script type="text/javascript" src="/libs/background/ribbon-dynamic.js"><\/script>');
+            }
+            </script>
+        
+
+    <script>!function(e){var r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function t(){for(var c=0;c<r.length;c++)t=r[c],void 0,0<=(n=t.getBoundingClientRect()).top&&0<=n.left&&n.top<=(e.innerHeight||document.documentElement.clientHeight)&&function(){var t,n,e,i,o=r[c];t=o,n=function(){r=r.filter(function(t){return o!==t})},e=new Image,i=t.getAttribute("data-original"),e.onload=function(){t.src=i,n&&n()},e.src=i}();var t,n}t(),e.addEventListener("scroll",function(){!function(t,n){clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(n)},500)}(t,e)})}(this);</script></body>
+</html>
