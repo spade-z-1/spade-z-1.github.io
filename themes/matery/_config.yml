@@ -442,7 +442,7 @@ wenzi:
 
 # 背景雪花飘落特效
 xuehuapiaoluo:
-  enable: true
+  enable: false0000
 
 # banner 是否每日切换.
 # 若为 false, 则 banner 默认为 banner0.jpg
