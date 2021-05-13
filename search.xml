@@ -13,14 +13,18 @@
       
       <categories>
           
-          <category> -系统安全 </category>
+          <category> 系统安全 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> -工具 -Windows提权 -Linux提权 </tag>
+            <tag> 工具 </tag>
+            
+            <tag> Windows提权 </tag>
+            
+            <tag> Linux提权 </tag>
             
         </tags>
       
@@ -161,11 +165,11 @@
       
         <tags>
             
-            <tag> SQL注入 </tag>
-            
             <tag> web漏洞 </tag>
             
             <tag> web防护 </tag>
+            
+            <tag> SQL注入 </tag>
             
         </tags>
       

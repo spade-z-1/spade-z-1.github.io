@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.spade-z.com/"/>
-  <updated>2021-05-13T03:51:28.427Z</updated>
+  <updated>2021-05-13T04:11:33.769Z</updated>
   <id>https://www.spade-z.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://www.spade-z.com/archives/24efcaff.html"/>
     <id>https://www.spade-z.com/archives/24efcaff.html</id>
     <published>2021-05-13T01:28:46.000Z</published>
-    <updated>2021-05-13T03:51:28.427Z</updated>
+    <updated>2021-05-13T04:11:33.769Z</updated>
     
     <summary type="html">
     
@@ -35,10 +35,14 @@
     
     </summary>
     
-      <category term="-系统安全" scheme="https://www.spade-z.com/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8/"/>
+      <category term="系统安全" scheme="https://www.spade-z.com/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8/"/>
     
     
-      <category term="-工具 -Windows提权 -Linux提权" scheme="https://www.spade-z.com/tags/%E5%B7%A5%E5%85%B7-Windows%E6%8F%90%E6%9D%83-Linux%E6%8F%90%E6%9D%83/"/>
+      <category term="工具" scheme="https://www.spade-z.com/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+      <category term="Windows提权" scheme="https://www.spade-z.com/tags/Windows%E6%8F%90%E6%9D%83/"/>
+    
+      <category term="Linux提权" scheme="https://www.spade-z.com/tags/Linux%E6%8F%90%E6%9D%83/"/>
     
   </entry>
   
@@ -191,11 +195,11 @@
       <category term="web安全" scheme="https://www.spade-z.com/categories/web%E5%AE%89%E5%85%A8/"/>
     
     
-      <category term="SQL注入" scheme="https://www.spade-z.com/tags/SQL%E6%B3%A8%E5%85%A5/"/>
-    
       <category term="web漏洞" scheme="https://www.spade-z.com/tags/web%E6%BC%8F%E6%B4%9E/"/>
     
       <category term="web防护" scheme="https://www.spade-z.com/tags/web%E9%98%B2%E6%8A%A4/"/>
+    
+      <category term="SQL注入" scheme="https://www.spade-z.com/tags/SQL%E6%B3%A8%E5%85%A5/"/>
     
   </entry>
   
