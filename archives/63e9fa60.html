@@ -771,7 +771,7 @@
 <blockquote>
 <p>靶机通用密码：  1qaz@WSX</p>
 </blockquote>
-<h1 id="1-2-环境配置"><a href="#1-2-环境配置" class="headerlink" title="1.2 环境配置"></a>1.2 环境配置</h1><hr>
+<h2 id="1-2-环境配置"><a href="#1-2-环境配置" class="headerlink" title="1.2 环境配置"></a>1.2 环境配置</h2><hr>
 <p>拓扑图<br><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://raw.githubusercontent.com/spade-z-1/cdn/master/img/ATT&amp;CK%E5%AE%9E%E6%88%98%E7%B3%BB%E5%88%97%E2%80%94%E2%80%94%E7%BA%A2%E9%98%9F%E5%AE%9E%E6%88%98(%E4%BA%8C)1.png" alt=""><br>下载好靶机打开vmx文件z之后恢复到快照v1.3，由于DMZ网段为192.168.111.0/24，所以需要将子网ip设置为192.168.111.0<br><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://raw.githubusercontent.com/spade-z-1/cdn/master/img/ATT&amp;CK%E5%AE%9E%E6%88%98%E7%B3%BB%E5%88%97%E2%80%94%E2%80%94%E7%BA%A2%E9%98%9F%E5%AE%9E%E6%88%98(%E4%BA%8C)2.png" alt=""></p>
 <h2 id="1-3-配置信息"><a href="#1-3-配置信息" class="headerlink" title="1.3 配置信息"></a>1.3 配置信息</h2><hr>
 <p>DC<br>IP：10.10.10.10OS：Windows 2012(64)<br>应用：AD域</p>
@@ -835,6 +835,9 @@ Content-Length: 839
 <p>目前得到账户信息<br>mssql@de1ay 1qaz@WSX<br>de1ay@de1ay 1qaz@WSX<br>de1ay@WEB 该用户是登录系统用的，密码是登录时自行修改的。<br>查看网络信息找到域控<br><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://raw.githubusercontent.com/spade-z-1/cdn/master/img/ATT&amp;CK%E5%AE%9E%E6%88%98%E7%B3%BB%E5%88%97%E2%80%94%E2%80%94%E7%BA%A2%E9%98%9F%E5%AE%9E%E6%88%98(%E4%BA%8C)33.png" alt=""><br>DNS 服务器 10.10.10.10 也就是域控。<br>找到 DC 的主机名<br><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://raw.githubusercontent.com/spade-z-1/cdn/master/img/ATT&amp;CK%E5%AE%9E%E6%88%98%E7%B3%BB%E5%88%97%E2%80%94%E2%80%94%E7%BA%A2%E9%98%9F%E5%AE%9E%E6%88%98(%E4%BA%8C)34.png" alt=""><br>主机名： DC.de1ay.com</p>
 <h2 id="3-7-通过凭证连接域控反弹域控-shell"><a href="#3-7-通过凭证连接域控反弹域控-shell" class="headerlink" title="3.7    通过凭证连接域控反弹域控 shell"></a>3.7    通过凭证连接域控反弹域控 shell</h2><hr>
 <p>创建新的监听。<br><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://raw.githubusercontent.com/spade-z-1/cdn/master/img/ATT&amp;CK%E5%AE%9E%E6%88%98%E7%B3%BB%E5%88%97%E2%80%94%E2%80%94%E7%BA%A2%E9%98%9F%E5%AE%9E%E6%88%98(%E4%BA%8C)35.png" alt=""><br>选择 smb 这个特殊的 beacon，名称就叫 smb 这个后面要用。<br>恢复初始凭证<br><code>beacon&gt; rev2self</code><br>通过前面获取到的账户信息生成新的凭证。<br><code>beacon&gt; make_token DE1AY\de1ay 1qaz@WSX</code><br><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://raw.githubusercontent.com/spade-z-1/cdn/master/img/ATT&amp;CK%E5%AE%9E%E6%88%98%E7%B3%BB%E5%88%97%E2%80%94%E2%80%94%E7%BA%A2%E9%98%9F%E5%AE%9E%E6%88%98(%E4%BA%8C)36.png" alt=""><br>DC上线<br><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://raw.githubusercontent.com/spade-z-1/cdn/master/img/ATT&amp;CK%E5%AE%9E%E6%88%98%E7%B3%BB%E5%88%97%E2%80%94%E2%80%94%E7%BA%A2%E9%98%9F%E5%AE%9E%E6%88%98(%E4%BA%8C)37.png" alt=""><br><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://raw.githubusercontent.com/spade-z-1/cdn/master/img/ATT&amp;CK%E5%AE%9E%E6%88%98%E7%B3%BB%E5%88%97%E2%80%94%E2%80%94%E7%BA%A2%E9%98%9F%E5%AE%9E%E6%88%98(%E4%BA%8C)38.png" alt=""></p>
+<blockquote>
+<p>工具包<a href="https://pan.baidu.com/s/1VdQW_AalGaZqT2LepNEnLw" target="_blank" rel="noopener">提取码：aj70</a></p>
+</blockquote>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -1022,7 +1025,7 @@ Content-Length: 839
 <script>
     let gitalk = new Gitalk({
         clientID: '2d725af13c37ac1fd6d0',
-        clientSecret: 'd890a49875a50a2ecbe652eeb96bb982373020e3',
+        clientSecret: '8bc5e07a70f75f82b4979e8318598e8285f3795c',
         repo: 'Blog-comment',
         owner: 'spade-z-1',
         admin: ["spade-z-1"],
