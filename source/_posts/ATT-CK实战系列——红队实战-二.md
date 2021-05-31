@@ -27,7 +27,7 @@ password:
 靶场下载地址[传送门](http://vulnstack.qiyuanxuetang.net/vuln/detail/3/)
 > 靶机通用密码：  1qaz@WSX
 
-# 1.2 环境配置
+## 1.2 环境配置
 ---
 拓扑图
 ![](https://raw.githubusercontent.com/spade-z-1/cdn/master/img/ATT&CK实战系列——红队实战(二)1.png)
