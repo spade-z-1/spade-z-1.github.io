@@ -237,10 +237,11 @@ postCalendar: true
 gitalk:
   enable: true
   owner: spade-z-1
-  repo: Blog-comment
+  repo: spade-z-1.github.io
+  proxy: https://netnr-proxy.cloudno.de/https://github.com/login/oauth/access_token
   oauth:
-    clientId: 2d725af13c37ac1fd6d0
-    clientSecret: d890a49875a50a2ecbe652eeb96bb982373020e3
+    clientId: 933b904ce888ee5fd408
+    clientSecret: 1c8365ac08754cf33b00316793dffd8cb0ecc9da
   admin:
     - spade-z-1
 
@@ -248,7 +249,7 @@ gitalk:
 # Gitment 评论模块的配置，默认为不激活
 gitment:
   enable: false
-  owner: Spade-Z
+  owner: 
   repo:
   oauth:
     clientId: 
@@ -285,7 +286,7 @@ valine:
 # 配置是否在 header 中显示 fork me on github 的图标，默认为true，你可以修改为你的仓库地址.
 githubLink:
   enable: true
-  url: https://github.com/SpadeZ-A/SpadeZ-A.github.io
+  url: https://github.com/spade-z-1/spade-z-1.github.io.git
   title: Fork Me
 
 # The password verification feature of read post. To use this feature,
